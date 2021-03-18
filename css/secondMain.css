@@ -1,1 +1,17 @@
-@import
+@media only screen and (min-width: 720px){
+
+	.smallFlexContainer{
+		display: flex;
+		flex-flow: row;
+		justify-content: center;
+
+	}
+
+	.superSmallFlexContainer{
+		display: flex;
+		flex-flow: column;
+		margin: 20px;
+		justify-content: center;
+	}
+}
+
