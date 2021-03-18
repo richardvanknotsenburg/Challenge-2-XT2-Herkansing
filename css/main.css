@@ -31,7 +31,7 @@ body {
 */
 .container {
   min-width: 320px;
-  max-width: 600px;
+  max-width: 720px;
   margin: 100px auto;
   border: 20px solid #e1e1e1;
   background-color: #ccc;
@@ -49,10 +49,10 @@ h1 {
 
 #raketAnimatie{
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   top: 400px;
-  left: 200px;
+  left: 100px;
   animation: 10000ms pulsate /*geeft het aantal weer hoevaak die moet loopen -->*/infinite alternate ease-in-out;
 }
 
