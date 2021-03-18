@@ -1,0 +1,11 @@
+@media only screen and (min-width: 1200px){
+
+
+	h2{
+		font-size: 38px;
+	}
+
+	.hello{
+		font-size: 30px;
+	}
+}
