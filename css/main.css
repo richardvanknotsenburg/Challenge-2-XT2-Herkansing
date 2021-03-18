@@ -3,25 +3,29 @@ body {
   font-family: 'Share Tech Mono', monospace;
   color: white;
   margin: 0px;
-  margin-top: 10px;
+  margin-top: 50px;
   width: 100%;
 }
 
 .ochtendDagdeel{
   background-color: #38543C; /*HunterGreen */
+  color: #38543C;
 }
 
 .middagDagdeel{
   background-color: #5993B2; /*Blue*/
+  color: #5993B2;
 
 }
 
 .avondDagdeel{
   background-color: #9c5252; /*Lichter Bordeaux*/
+  color: #9c5252;
 }
 
 .nachtDagdeel{
   background-color: #262626; /*off-black*/
+  color: #262626;
 }
 
 /*.newBackground{
@@ -43,11 +47,16 @@ body {
 .container {
   width: 100%;
   min-width: 320px;
-  border: 5px solid #e1e1e1;
+  max-width: 720px;
+  border: 10px solid black;
   border-radius: 5px;
-  background-color: #ccc;
+  background-color: white;
   text-align: center;
   z-index: 5;
+}
+
+.sleepytime{
+  height: 100px;
 }
 
 .overflow{
@@ -55,8 +64,21 @@ body {
   width: 100%;
 }
 
-h1 {
-  font-size: 20px;
+.space{
+  height: 50px;
+}
+
+h1{
+  color: white;
+  text-align: center;
+}
+
+#clock{
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 30px;
   position: relative;
   text-transform: uppercase;
 /*  text-shadow: 0 5px 0 rgb(204,204,204), 0 2px 0 rgb(201,201,201) , 0 3px 0 rgb(187,187,187) , 0 4px 0 rgb(185,185,185) , 0 5px 0 rgb(170,170,170) , 0 6px 1px rgba(0,0,0,0.0980392) , 0 0 5px rgba(0,0,0,0.0980392) , 0 1px 3px rgba(0,0,0,0.298039) , 0 3px 5px rgba(0,0,0,0.2) , 0 5px 10px rgba(0,0,0,0.247059) , 0 10px 10px rgba(0,0,0,0.2) , 0 20px 20px rgba(0,0,0,0.14902);
@@ -64,8 +86,8 @@ h1 {
 
 #raketAnimatie{
   position: relative;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   top: 400px;
   left: 2%;
   animation: 10000ms  pulsate/*pulsate = geeft het aantal weer hoevaak die moet loopen -->*/infinite ease-in-out;

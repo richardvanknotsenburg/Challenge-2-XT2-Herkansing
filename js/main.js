@@ -89,31 +89,8 @@ function klok(){
 		
 	}
 
-						//Oefening voor met seconden (om sneller te testen)
-
-
-						// //Ochtend uren van 6:00 tot 11:59
-						// if (seconds >= 6 && seconds <= 11) { //tussen een bepaalde tijd (van 9 tot 21 hier // && betekend en)
-						// 	document.getElementById('body').classList.add('ochtendDagdeel');
-						// 	document.getElementById('body').classList.remove('nachtDagdeel');
-						// }
-						// //middag uren van 12:00 tot 17:59
-						// else if (seconds >= 12 && seconds <= 17){
-						// 	document.getElementById('body').classList.remove('ochtendDagdeel');
-						// 	document.getElementById('body').classList.add('middagDagdeel');
-						// }
-
-						// //avond uren van 18:00 tot 23:59
-						// else if (seconds >= 18 && seconds <= 23){
-						// 	document.getElementById('body').classList.remove('middagDagdeel');
-						// 	document.getElementById('body').classList.add('avondDagdeel');
-						// }
-
-						// //avond uren van 18:00 tot 23:59
-						// else if (seconds >= 0 && seconds <= 5){
-						// 	document.getElementById('body').classList.remove('avondDagdeel');
-						// 	document.getElementById('body').classList.add('nachtDagdeel');
-						// }
+					
+						
 
 	/*-------- Afrondingen van getallen (de 0 ervoor) --------*/
 
@@ -139,25 +116,9 @@ function klok(){
 klok();
 setInterval(klok, 1000);
 
-function settime(){
-	var today = new Date();
-	var minutes = today.getMinutes();
-	var audio= document.getElementById("myaudio");
-	audio.currentTime=47;
-	audio.play();
-			
-	}
 
-// function purgeAlarm(){
-// 	var todayAlarm = new Date();
-// 	var itsTime = todayAlarm.getSeconds();
-// 	var audio = new Audio('sounds/Purge Siren Sound Effect (HD).mp3');
-// 	audio.play();
-	
-// }
-// if (seconds = 20){
-// 	purgeAlarm();
-// }
+
+
 
 
 
