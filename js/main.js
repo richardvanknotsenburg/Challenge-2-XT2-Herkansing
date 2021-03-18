@@ -132,8 +132,11 @@ document.getElementById('datum').innerHTML = dagenWeek[today.getDay()] + ' </br>
 klok();
 setInterval(klok, 1000);
 
-
-
+document.getElementById('siren').onclick = function(){
+	document.getElementById('siren').classList.add('bye');
+	document.getElementById('sirenActivated').classList.add('hello');
+	document.getElementById('sirenActivated').classList.remove('activated');
+}
 
 
 

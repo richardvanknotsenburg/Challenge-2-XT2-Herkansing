@@ -54,6 +54,25 @@ body {
   z-index: 5;
 }
 
+#siren{
+  font-family: 'Share Tech Mono', monospace; 
+  color: black;
+  background: white;
+  border: solid black;
+}
+.activated{
+  display: none;
+}
+.bye{
+  display: none;
+}
+.hello{
+  display: relative;
+  animation: 1000ms activation infinite alternate;
+}
+
+
+
 .sleepytime{
   height: 100px;
 }
@@ -138,4 +157,14 @@ h2 {
     transform: scale(0.5);
   }
 }
+
+@keyframes activation{
+  0%{
+    color: white
+  }
+  100%{
+    color: lightgreen;
+  }
+}
+
 
