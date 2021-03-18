@@ -2,6 +2,9 @@
 body {
   font-family: 'Share Tech Mono', monospace;
   color: white;
+  margin: 0px;
+  margin-top: 10px;
+  width: 100%;
 }
 
 .ochtendDagdeel{
@@ -29,55 +32,89 @@ body {
   background-color: blue;
 }
 */
+#flexContainer{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  width: 100%;
+}
+
 .container {
+  width: 100%;
   min-width: 320px;
-  max-width: 720px;
-  margin: 100px auto;
-  border: 20px solid #e1e1e1;
+  border: 5px solid #e1e1e1;
+  border-radius: 5px;
   background-color: #ccc;
   text-align: center;
-  border-radius: 20px;
   z-index: 5;
 }
 
+.overflow{
+  overflow: hidden;
+  width: 100%;
+}
+
 h1 {
-  font-size: 40px;
+  font-size: 20px;
   position: relative;
   text-transform: uppercase;
-  text-shadow: 0 5px 0 rgb(204,204,204), 0 2px 0 rgb(201,201,201) , 0 3px 0 rgb(187,187,187) , 0 4px 0 rgb(185,185,185) , 0 5px 0 rgb(170,170,170) , 0 6px 1px rgba(0,0,0,0.0980392) , 0 0 5px rgba(0,0,0,0.0980392) , 0 1px 3px rgba(0,0,0,0.298039) , 0 3px 5px rgba(0,0,0,0.2) , 0 5px 10px rgba(0,0,0,0.247059) , 0 10px 10px rgba(0,0,0,0.2) , 0 20px 20px rgba(0,0,0,0.14902);
-}
+/*  text-shadow: 0 5px 0 rgb(204,204,204), 0 2px 0 rgb(201,201,201) , 0 3px 0 rgb(187,187,187) , 0 4px 0 rgb(185,185,185) , 0 5px 0 rgb(170,170,170) , 0 6px 1px rgba(0,0,0,0.0980392) , 0 0 5px rgba(0,0,0,0.0980392) , 0 1px 3px rgba(0,0,0,0.298039) , 0 3px 5px rgba(0,0,0,0.2) , 0 5px 10px rgba(0,0,0,0.247059) , 0 10px 10px rgba(0,0,0,0.2) , 0 20px 20px rgba(0,0,0,0.14902);
+*/}
 
 #raketAnimatie{
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   top: 400px;
-  left: 100px;
-  animation: 10000ms pulsate /*geeft het aantal weer hoevaak die moet loopen -->*/infinite alternate ease-in-out;
+  left: 2%;
+  animation: 10000ms  pulsate/*pulsate = geeft het aantal weer hoevaak die moet loopen -->*/infinite ease-in-out;
 }
 
 @keyframes pulsate {
   0% { 
     top: 20%;
     left: 5%; 
+    transform: scale(0.5);
+    opacity: 0%;
   }
   30%{
+    transform: scale(1);
     top: 70%;
     left: 70%;
     transition-timing-function: ease-in-out;
+    opacity: 100%;
+    transform: rotate(45deg);
   }
-  30.1%{
-    transform: rotate(360deg);
+  50%{
+    top: 50%;
+    left: 50%;
+    transform: scale(2);
+    transform: rotate(-180deg);
   }
-  40%{
-    top: 40%;
-    left: 70%;
+  60%{
+    top: 80%;
+    left: 30%;
+    transform: scale(1);
+    opacity: 0%;
   }
+  70%{
+    top: 30%;
+    left: 90%;
+    opacity: 0%;
+    transform: rotate(180deg);
+  }
+  
   80%{
     opacity: 100%;
+    transform: scale(1);
+    transform: rotate(180deg);
   }
   100%{
     opacity: 0%;
+    top: 90%;
+    left: 20%;
+    transform: scale(0.5);
   }
 }
 
