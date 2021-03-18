@@ -89,6 +89,17 @@ function klok(){
 		
 	}
 
+	// nummertje om lekker wakker te worden om 8:00 
+	if (hours > 7 && hours < 9) /*8 uur*/{
+		if (minutes >= 0 && minutes < 1) /*minuut 0*/{
+			if (seconds >= 0 && seconds < 1) /*seconde 0 */{
+				var wakker= document.getElementById("wakkerWorden");
+				wakker.play();
+			}
+		}
+		
+	}
+
 					
 						
 
@@ -110,6 +121,11 @@ function klok(){
 
 	//het ook daadwerkelijk afspelen
 	document.getElementById("clock").innerHTML = hours + ':' + minutes + ':' + seconds;
+
+	var dagenWeek = new Array('zondag', 'maandag', 'dinsdag', 'woensdag', 'donderdag', 'vrijdag', 'zaterdag');
+var maanden = new Array('januari', 'februari', 'maart', 'april', 'mei', 'juni', 'juli', 'augustus', 'september', 'oktober', 'november', 'december');
+document.getElementById('datum').innerHTML = dagenWeek[today.getDay()] + ' </br> ' + today.getDate() + ' ' + maanden[today.getMonth()] + ' ' + today.getFullYear();
+
 }
 
 //zorgt dat de klok geladen wordt in intevals van 1000 miliseconden (per 1 seconden)
